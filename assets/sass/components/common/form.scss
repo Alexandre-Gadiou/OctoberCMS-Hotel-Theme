@@ -2,6 +2,14 @@ form {
     .button-bar {
             text-align:right;
     }
+    
+    .date {
+        .input-group-addon {
+            &:hover,&:focus {
+                cursor:pointer;
+            }
+        }
+    }
 }
 
 h3 + .form {
