@@ -1,0 +1,29 @@
+description = "Simple layout"
+
+[session]
+security = "all"
+==
+<!DOCTYPE html>
+<html>
+
+  {% partial 'head' %}
+
+  <body class="simple">
+
+  {% partial 'header' %}
+
+  {% partial 'menu' %}
+
+  <section class="page-content">
+    <div class="container">
+      {% page %}
+    </div>
+  </section>
+
+  {% content 'blocks/footer' %}
+
+  {% partial "javascript" %}
+
+  </body>
+
+</html>
