@@ -2,10 +2,14 @@
 
 .navbar {
     
+    .account-link{
+        & > .fa {
+            margin-right: 5px;
+        }
+    }
+    
+    .dropdown-menu {
+        width:100%;
+    }
 
 }
-
-
-
-
-
