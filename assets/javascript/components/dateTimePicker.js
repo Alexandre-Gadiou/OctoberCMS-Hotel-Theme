@@ -9,6 +9,7 @@ var init = function () {
     var pickerConfig = {
         format: 'YYYY-MM-DD',
         locale: 'en',
+        defaultDate: moment(),
         icons:{
             time: 'fa fa-clock-o',
             date: 'fa fa-calendar',
@@ -22,16 +23,16 @@ var init = function () {
         }
     };
     
-    var picker2Config = pickerConfig;
+    var picker2Config =  jQuery.extend({}, pickerConfig);
+    picker2Config['defaultDate'] =  moment().add(7, 'days');
     picker2Config['useCurrent'] = false; //Important! See issue #1075
-    
-    console.log(picker2Config);
-    
+        
+    // Init simple datepickers
     $('.simple-datepicker').datetimepicker(pickerConfig);
     
+    // Init linked datepickers
     var $picker1 = $(".linked-datepicker.picker1");
     var $picker2 = $(".linked-datepicker.picker2");
-
     $picker1.datetimepicker(pickerConfig);
     $picker2.datetimepicker(picker2Config);
     $picker1.on("dp.change", function (e) {
