@@ -1,0 +1,26 @@
+&.room.list {
+    .title {
+        font-weight: 600;
+        margin-top:15px;
+    }
+    
+    .book-link {
+        color:$text-color;
+        &:hover,&:focus {
+            text-decoration: none;
+            color:$text-color;
+        }
+    }
+    
+    .carousel {
+        
+        .item {
+            img {
+                width:100%;
+            }
+        }
+        .carousel-control {
+            
+        }
+    }
+}

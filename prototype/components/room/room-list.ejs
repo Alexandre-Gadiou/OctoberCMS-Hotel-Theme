@@ -1,0 +1,47 @@
+<li>
+
+    <div class="algad-hotel room list">
+
+        <div class="photos">
+
+            <div id="<%-playerID-%>" class="carousel" data-ride="carousel" itemscope itemtype="http://schema.org/ImageGallery">
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+
+                    <div class="item active" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" >
+                        <img itemprop="contentUrl" src="<%-img1-%>" alt="image 1">
+                    </div>
+
+                    <div class="item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" >
+                        <img itemprop="contentUrl" src="<%-img2-%>" alt="image 2">
+                    </div>
+
+                    <div class="item" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject" >
+                        <img itemprop="contentUrl" src="<%-img3-%>" alt="image 2">
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#<%-playerID-%>" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#<%-playerID-%>" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+
+            </div> <!-- Carousel -->
+
+        </div>
+
+        <a class="book-link" href="#book">
+            <div class="title">
+                <span class="nightly-price"><%-price-%></span> <span class="currency">€</span> <%-title-%>
+            </div>
+            <div class="description">
+                <%-description-%>
+            </div>
+        </a>
+
+    </div>
+
+</li>
