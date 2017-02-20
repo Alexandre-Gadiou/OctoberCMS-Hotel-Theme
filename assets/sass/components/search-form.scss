@@ -1,0 +1,11 @@
+&.search-form {
+    
+    @media (max-width: $screen-xs-max) {
+        .linked-date {
+            label {
+                line-height: 34px;
+            }
+        }
+    }
+    
+}
