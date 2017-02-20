@@ -1,0 +1,20 @@
+<!-- Scripts -->
+<script src="{{ ['assets/javascript/main.js']|theme }}"></script>
+<script src="{{ ['assets/vendor/moment/min/moment.min.js']|theme }}"></script>
+<script src="{{ ['assets/vendor/bootstrap-sass/assets/javascripts/bootstrap.min.js']|theme }}"></script>
+<script src="{{ ['assets/vendor/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js']|theme }}"></script>
+
+<script>
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id))
+            return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.3";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+{% framework extras %}
+{% scripts %}
