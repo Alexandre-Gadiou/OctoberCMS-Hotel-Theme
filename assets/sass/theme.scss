@@ -1,0 +1,16 @@
+// theme.scss
+
+@import "../vendor/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "../vendor/eonasdan-bootstrap-datetimepicker/src/sass/_bootstrap-datetimepicker.scss";
+$fa-font-path: "../vendor/font-awesome/fonts";
+@import "../vendor/font-awesome/scss/font-awesome.scss";
+
+
+@import "theme/all.scss";
+@import "layouts/all.scss";
+@import "pages/all.scss";
+@import "components/all.scss";
+
+body {
+	color: $black;
+}
