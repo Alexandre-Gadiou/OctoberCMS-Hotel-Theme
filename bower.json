@@ -1,0 +1,19 @@
+{
+  "name": "Hotel",
+  "version": "0.0.0",
+  "description": "Hotel theme for OctoberCMS",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.1.1",
+    "font-awesome": "fontawesome#~4.4.0",
+    "bootstrap-sass": "~3.3.5",
+    "eonasdan-bootstrap-datetimepicker": "^4.17.45",
+    "moment": "2.17.1"
+  }
+}
