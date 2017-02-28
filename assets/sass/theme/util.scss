@@ -3,3 +3,9 @@
 .text-bold {
     font-weight: bold;
 }
+
+.pl-md-0 {
+    @media (min-width: $screen-md-min) { 
+        padding-left: 0;
+    }
+}
