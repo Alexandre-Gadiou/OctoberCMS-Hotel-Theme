@@ -95,3 +95,6 @@
 
 </nav>
 
+{% flash %}
+<div class="alert alert-{{ type == 'error' ? 'danger' : type }}">{{ message }}</div>
+{% endflash %}
